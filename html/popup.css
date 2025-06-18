@@ -1,0 +1,43 @@
+body {
+	width: 10rem;
+	padding: 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+button {
+	width: 8rem;
+	height: 8rem;
+	aspect-ratio: 1/1;
+	cursor: pointer;
+	background-color: #f50;
+	color: white;
+	font-size: medium;
+	border: 1px;
+	border-radius: 100%;
+	padding: 1rem;
+	font-weight: bold;
+	box-shadow: 2px 0px 4px 2px rgb(213, 213, 213);
+	transition: transform 0.3s ease;
+}
+
+button:hover {
+	transform: scale(1.04);
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	font-size: x-small;
+	opacity: 44%;
+}
+
+a {
+	color: #f50;
+	text-decoration: underline;
+}
