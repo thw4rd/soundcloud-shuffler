@@ -111,23 +111,33 @@ function showLoadingOverlay() {
 	overlay.style.width = '100vw'
 	overlay.style.height = '100vh'
 	overlay.style.display = 'flex'
+	// overlay.style.flexDirection = 'column'
+	// overlay.style.gap = '4px'
 	overlay.style.justifyContent = 'center'
 	overlay.style.alignItems = 'center'
 	overlay.style.zIndex = '4444'
 	overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
-	overlay.style.backdropFilter = 'blur(10px)'
-	overlay.style.webkitBackdropFilter = 'blur(10px)'
+	overlay.style.backdropFilter = 'blur(4px)'
+	overlay.style.webkitBackdropFilter = 'blur(4px)'
 	overlay.style.transition = 'opacity 0.5s ease'
 	// overlay.style.opacity = '0'
 	// requestAnimationFrame(() => {
 	// 	overlay.style.opacity = '1'
 	// })
 
+	// const text = document.createElement('p')
+	// text.style.fontSize = '1rem'
+	// text.style.fontWeight = 'bold'
+	// text.style.textAlign = 'center'
+	// text.textContent = `Please, st4y on this tab for a successful shuffle.`
+	// overlay.appendChild(text)
+
 	const gif = document.createElement('img')
 	gif.src = chrome.runtime.getURL('/assets/shuffle.gif')
 	gif.style.maxWidth = '300px'
 	gif.style.maxHeight = '300px'
 	overlay.appendChild(gif)
+
 	document.body.appendChild(overlay)
 }
 
